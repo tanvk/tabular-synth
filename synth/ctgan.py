@@ -1,11 +1,10 @@
+# synth/ctgan.py
 from __future__ import annotations
 import pandas as pd
-
 from sdv.single_table import CTGANSynthesizer
 from sdv.metadata import SingleTableMetadata
 
 class CTGANGenerator:
-    """Wrapper around SDV's CTGANSynthesizer for single-table synthesis."""
     def __init__(self, epochs: int = 300, batch_size: int = 500, embedding_dim: int = 128):
         self.epochs = epochs
         self.batch_size = batch_size
