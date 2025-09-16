@@ -1,0 +1,17 @@
+# venv & Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.DS_Store
+
+# local data & artifacts
+data/*
+!data/.gitkeep
+uploads/
+artifacts/
+
+# streamlit & uvicorn caches
+.streamlit/
+.pytest_cache/
