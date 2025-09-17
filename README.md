@@ -32,20 +32,19 @@ Real tabular data is often **sensitive**, **siloed**, or **hard to share**. Synt
 ## System overview
 
 ```mermaid
-flowchart LR
-  A[CSV Upload] --> B[Schema & EDA]
-  B --> C[Preprocess\n(type detection, nulls, category encodings)]
-  C --> D[Fit Copula Model]
-  D --> E[Generate N Synthetic Rows]
-  E --> F[Postprocess\n(bounds, integerize, inverse transforms)]
-  F --> G[Evaluate: Fidelity | Utility | Privacy]
-  G --> H[Report HTML]
-  E --> I[synthetic.csv]
+sequenceDiagram
+  actor U as User
+  participant UI as Streamlit UI
+  participant M as Copula Model
+  participant R as Metrics
 
-  subgraph UI [Streamlit UI]
-  A
-  H
-  end
+  U->>UI: Upload CSV
+  UI->>M: Fit (types, preprocess, train)
+  UI->>M: Sample N rows
+  M-->>UI: synthetic.csv
+  UI->>R: Evaluate (fidelity, utility, privacy)
+  R-->>UI: report.html + plots
+  UI-->>U: Download artifacts
 ```
 
 **Key modules**
