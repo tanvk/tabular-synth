@@ -227,11 +227,9 @@ sequenceDiagram
   UI-->>U: Download artifacts
 ```
 
-imgae - `assets/architecture.png`
-
 ---
 
-## ⚠Limitations
+## Limitations
 - Copulas can struggle with **high‑cardinality categoricals** and **non‑linear** interactions.
 - **Privacy metrics are heuristic**; use additional governance (e.g., DCRs, expert review) for real deployments.
 - TSTR depends on **target selection** and **model choice**.
