@@ -2,10 +2,6 @@
 
 > **Generate privacy‑preserving tabular datasets** from a real CSV, evaluate fidelity/utility/privacy, and export reports — all from a clean Streamlit UI or Docker.
 
-<p align="center">
-  <img src="assets/banner.png" alt="Tabular Synth banner" width="920"/>
-</p>
-
 ---
 
 ## TL;DR
@@ -67,13 +63,7 @@ sequenceDiagram
 
 ---
 
-## Demo (GIF)
-
-Add a short screen capture walking through **upload → train → generate → report**.
-
-```text
-assets/demo.gif (≈10–20s; < 10 MB)
-```
+## Demo 
 
 ---
 
@@ -196,15 +186,13 @@ jobs:
 ---
 
 ## Screenshots
-Store images in `assets/` and reference with relative paths in the README (GitHub renders automatically).
+<p align="center">
+  <img src="assets/ctgan1.png" alt="CTGAN" width="920"/>
+</p>
 
-```md
-![Upload screen](assets/01-upload.png)
-![Schema editing](assets/02-schema.png)
-![Metrics dashboard](assets/03-report.png)
-```
-
-> Keep images ≤ 1200px wide for readability. For GIFs, aim for < 10 MB.
+<p align="center">
+  <img src="assets/ctgan2.png" alt="CTGAN - output" width="920"/>
+</p>
 
 ---
 
