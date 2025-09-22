@@ -65,6 +65,8 @@ sequenceDiagram
 
 ## Demo 
 
+![Demo](assets/Gaussian.gif)
+
 ---
 
 ## Quickstart
